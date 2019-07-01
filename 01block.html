@@ -11,16 +11,34 @@
 <!-- ie의 버전을 최신버전으로 맞워준다 -->
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>block/inline 알아보기</title>
+<!-- 색상에 대한 것을 종합해서 이곳에서 사전 명시 가능-->
+<style>
+	.tit{
+		text-align: left;
+		background-color: darkkhaki;
+		padding: 20px; 
+		border: 5px solid rgb(0, 0, 0);
+	}
+	.tit2 {
+		text-align: right;
+		background-color: aqua;
+		padding: 40px;
+		border: 5px dotted darkblue;
+	}
+
+
+</style>
 </head>
 
 <!-- html 문서의 본문 -->
 <!-- 
 	1. block tag
-	h1~6, p, div, ul, li, ol, dl, dt, dd,...
+	h1~6(글자크기, 볼드체), p, div(속성이 없는 대표적인 block), ul, li, ol, dl, dt, dd,...
 	2. inline tag
 	글씨, 이미지, a, span, i, b, strong, em ...
 -->
 <body>
+<!--
 	<h1>가나다</h1>
 	<h2>나</h2>
 	<p>
@@ -29,11 +47,22 @@
 		여기를 클릭하면 <a href="https://naver.com" target="_blank">네이버</a>로 갑니다. 
 		<img src="../img/bts-1.jpg" alt="">
 	</p>
+-->
+<!--div style="text-align: left; background-color: darkkhaki; padding: 20px; border: 5px solid rgb(0, 0, 0);"
+-->
+<div class="tit">
+<!--div style="text-align: left; background-color: #33cc00; padding: 20px"-->
+<!--div style="text-align: left; background-color: rgba(0,0,0,0.5); padding: 20px"-->
+		<a href="http://naver.com">네이버</a>
+		<a href="http://daum.net">다음</a>
+		<a href="http://google.com">구글</a>
+		<a href="http://coupang.com">쿠팡</a>
+</div>
+<div class="tit"> 이렇게 해도 적용되나요? </div>
+<div> 여기는 다른공간 </div>
 
+<div class="tit2"> 여기는 class tit2가 적용된 곳입니다. </div>
 
 
 </body>
-
-
-
 </html>
